@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPXViewer - View and Analyze GPX Files</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 60px 40px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #667eea;
+        }
+        
+        .subtitle {
+            font-size: 1.3em;
+            color: #666;
+            margin-bottom: 40px;
+        }
+        
+        .description {
+            text-align: left;
+            margin-bottom: 30px;
+            color: #555;
+        }
+        
+        .features {
+            text-align: left;
+            margin: 30px 0;
+        }
+        
+        .features h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+        
+        .features ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .features li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .features li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        
+        .github-link {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background 0.3s ease;
+        }
+        
+        .github-link:hover {
+            background: #764ba2;
+        }
+        
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #999;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🗺️ GPXViewer</h1>
+        <p class="subtitle">View and Analyze GPX Files</p>
+        
+        <div class="description">
+            <p>GPXViewer is a tool for viewing and analyzing GPX (GPS Exchange Format) files. 
+            Whether you're tracking your hikes, bike rides, or any GPS-recorded activities, 
+            GPXViewer helps you visualize and understand your data.</p>
+        </div>
+        
+        <div class="features">
+            <h2>Features</h2>
+            <ul>
+                <li>View GPX tracks on interactive maps</li>
+                <li>Analyze elevation profiles</li>
+                <li>Display waypoints and routes</li>
+                <li>Calculate distance and statistics</li>
+                <li>Export and share your tracks</li>
+            </ul>
+        </div>
+        
+        <a href="https://github.com/ashamp/GPXViewer" class="github-link">
+            View on GitHub
+        </a>
+        
+        <footer>
+            <p>Released under the MIT License</p>
+        </footer>
+    </div>
+</body>
+</html>
